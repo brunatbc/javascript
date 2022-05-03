@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração Status</title>
+</head>
+<body>
+    <h1> Cheque se você é um imigrante ou não</h1>
+    Seu país <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Conferir" onclick="verificar()">
+    <div id="ppx">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var txtvel = window.document.getElementById('txtpais')
+            var ppx = window.document.getElementById ('ppx')
+            var texto = String(txtpais.value)
+            ppx.innerHTML =`<p>Você é do(a) ${texto}</p>`
+            if (texto='Brasil'){
+             ppx.innerHTML += `<p> Você é brasileiro!!</p>` 
+        }
+    }
+    </script>
+</body>
+</html>

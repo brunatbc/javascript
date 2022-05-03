@@ -1,0 +1,24 @@
+body{
+background-color: rgb(216, 155, 180);
+font: normal 1em Helvetica;
+}
+header{
+color: white;
+text-align: center;
+}
+section{
+background-color: rgba(219, 228, 253, 0.726);
+border-radius: 8px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
+}
+#selnum{
+    width: 150px;
+}
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+}
