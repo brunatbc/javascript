@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Lógica</h1>
+
+    <script>
+        let jogador1 = parseInt(prompt("Oi! Você é o jogador 1, por favor escolha um número inteiro"));
+        let jogador2 = parseInt(prompt("E você agora é o jogador 2, escolha um número inteiro"));
+        let numSor = parseInt(Math.random()*2)
+
+        alert("O número sorteado foi: "+numSor);
+
+
+        if (numSor===0  && jogador1<jogador2 || numSor===1 && jogador1>jogador2){
+            alert("Parabéns Jogador 1, você venceu");
+        }else{
+            alert("Parabéns Jogador 2, você venceu!");
+        }
+
+    </script>
+
+
+
+</body>
+</html>

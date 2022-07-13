@@ -10,20 +10,34 @@
     <h1> Lógica de Programação com Javascript.</h1>
 
     <script>
-        let n1 = prompt("Digite a primeira nota");
-        n1 = parseFloat(n1);
+        var n = parseInt(prompt("Oi! Digita um número 1 a 6"))
 
-        let n2 = prompt("Insira a segunda nota, por favor");
-        n2 = parseFloat(n2);
+        switch(n){
+            case 1:
+                alert("Você escolheu o número 1");
+                break;
+            case 2:
+                alert("Você escolheu o número 2");
+                break;
+            case 3:
+                alert("Você escolheu o número 3");
+                break;
+            case 4:
+                alert("Você escolheu o número 4");
+                break;
+            case 5:
+                alert("Você escolheu o número 5");
+                break;
+            case 6:
+                alert("Você escolheu o número 6");
+                break;
+            default: 
+            alert("Por favor escolha apenas um número de 1 a 6")
 
-        var media = (n1+n2)/2;
 
-        if (media>5){
-            alert("Parabéns! Você foi aprovado");
-        } else{
-            alert("Infelizmente, você não foi aprovado");
+
+
         }
-
     </script>
 </body>
 </html>
