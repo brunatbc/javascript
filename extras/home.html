@@ -10,13 +10,20 @@
     <h1> Lógica de Programação com Javascript.</h1>
 
     <script>
-        alert("Oi! Vamos calcular a sua média do primeiro semestre")
-        var n1 = parseFloat(prompt("Qual foi a sua primeira nota?"));
-        var n2 = parseFloat(prompt("E a sua segunda nota?"));
+        let n1 = prompt("Digite a primeira nota");
+        n1 = parseFloat(n1);
 
-        media=(n1+n2)/2
-    
-        alert("Sua média do primeiro semestre foi: "+media);
+        let n2 = prompt("Insira a segunda nota, por favor");
+        n2 = parseFloat(n2);
+
+        var media = (n1+n2)/2;
+
+        if (media>5){
+            alert("Parabéns! Você foi aprovado");
+        } else{
+            alert("Infelizmente, você não foi aprovado");
+        }
+
     </script>
 </body>
 </html>
