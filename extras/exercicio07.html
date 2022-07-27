@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Calculadora 🧮</title>
+</head>
+<body>
+    <h1>Mini-Calculadora</h1>
+    <p>Escolha o Cálculo que Deseja Realizar</p>
+
+
+        <button onclick="soma()">+</button>
+        <button onclick="subtrai()">-</button>
+        <button onclick="multiplica()">x</button>
+        <button onclick="divide()">/</button>
+
+    <div id="output"></div>
+
+    <script>
+            n1 = prompt("Olá insira um número");
+            n1=parseInt(n1);
+
+
+            function naTela (){
+                var output = document.querySelector('#output');
+                output.innerHTML = n1;
+            }
+
+            function soma(){
+                n2 = prompt("Insira outro número");
+                n2 = parseInt(n2);
+                n1 = n1+n2;
+                // n1 += n2
+                naTela();
+            } 
+
+            function subtrai(){
+                n2 = prompt("Insira outro número");
+                n2 = parseInt(n2);
+                n1= n1-n2;
+                // n1 -= n2
+                naTela();
+            }
+
+            function multiplica(){
+                n2 = prompt("Insira outro número");
+                n2 = parseInt(n2);
+                n1=n1*n2;
+               // n1 *= n2;
+                naTela();       
+            }
+
+            function divide(){
+                n2 = prompt("Insira outro número");
+                n2 = parseInt(n2);
+                n1 = n1/n2;
+                // n1 /= n2;
+                naTela();            
+            }
+    </script>
+    
+</body>
+</html>

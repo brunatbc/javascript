@@ -19,16 +19,25 @@
             function mostrarTabuada(){
                 var num = prompt("Oi, insira um número:");
 
+                limparTabuada();
+
                 num = parseInt(num);
 
                 var i = 1;
 
                 while(i <= 1000){
-                    mensagem += num +' x '+ i + ' = ' + ' + '(num*i)+'<br>'
+                    mensagem += num +' x '+ i +' = ' + (num*i)+'<br>';
                     i++;
                 }
                  output.innerHTML=mensagem;
             }
+
+            function limparTabuada(){
+                mensagem=" ";
+                output.innerHTML=mensagem;
+            }
+
+        
 
             var output = document.querySelector('#output');
             var mensagem = '';
