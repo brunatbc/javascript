@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Funções com JS</h1>
+
+    <button onclick="mostrarAreaAlert()">Mostrar a Área com um Alert</button>
+    <button onclick="mostrarAreaOutput()">Mostrar a Área com um Output</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        function mostrarAreaAlert(){
+            var largura = parseInt(prompt("Insira a largura: "));
+            var altura = parseInt(prompt("Insira agora a altura: "));
+            var area = calcularArea(largura,altura);
+
+            alert ("A área total é: "+area);
+            
+        }
+
+        function mostrarAreaOutput(){
+            var largura = parseInt(prompt("Insira a largura: "));
+            var altura = parseInt(prompt("Insira agora a altura: "));
+            var area = calcularArea(largura,altura);
+
+            document.querySelector('#output').innerHTML = "A área total é: "+area;
+
+
+
+        }
+
+        function calcularArea(l,a){
+            return l*a;
+        }
+    </script>
+</body>
+</html>

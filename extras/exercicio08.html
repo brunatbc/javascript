@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+    
+    <div id="output"></div>
+</body>
+
+    <script>
+
+        var n1 = parseInt(prompt("Olá, insira um número:"));
+
+        naTela();
+       
+            function naTela(){
+                var output = document.querySelector('#output');
+                output.innerHTML=n1;
+            }
+
+
+        function calcular(operador){
+                var n2 = parseInt(prompt("Insira outro número: "));
+            switch (operador){
+                case '+': 
+                    n1+=n2;
+                    break;
+
+                case '-':
+                    n1-=n2;
+                    break
+
+                case '*':
+                    n1*=n2;
+                    break
+
+                case'/':
+                    n1/=n2;
+            } 
+            
+            naTela();
+            
+        }
+    </script>
+</html>
