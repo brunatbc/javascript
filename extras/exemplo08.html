@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Funções no JavaScript</h1>
+
+    <button onclick="mostrarArea(largura,altura)">Mostrar Área</button>
+
+    <script>
+        var largura = parseInt(prompt("Olá, insira a largura: "));
+
+        var altura = parseInt(prompt("Agora insira a altura:"))
+
+        function mostrarArea(l,a){
+            alert("A área total é: "+(l*a));
+        }
+
+    </script>
+</body>
+</html>
