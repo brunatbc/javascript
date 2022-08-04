@@ -27,7 +27,12 @@
             
             var n2 = parseInt(prompt("Insira outro número"));
 
-            var msg = calcular(simbolo, n1, n2)
+            try{
+                var msg = calcular(simbolo, n1, n2)
+            } catch(e){
+                    alert(e);
+                    return;
+                }
 
             escreve(msg);
 
@@ -39,6 +44,17 @@
         }
 
         function calcular(simbolo, n1, n2){
+
+            if (simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo !== '/'){
+                throw new Error("Erro. Não é um símbolo");
+                
+            }
+
+            if(isNaN(n1) || isNaN(n2)){
+                throw new Error("Erro. Só funciona com números");
+                
+            }
+
             var numeroCalculado = null;
 
             switch (simbolo){
