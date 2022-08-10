@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Pares</title>
+</head>
+<body>
+    <h1> Números Pares </h1>
+    <div id="output"></div>
+
+    <script>
+        var arr = new Array(15, 25, 11, 30, 24, 27, 4, 78)
+
+       var soma = 0;
+
+       for (var i =0; i<arr.length; i++){
+           console.log(i);
+           console.log(arr[i]);
+
+           if (!isNaN(arr[i]) && arr%2===0){
+               soma+= arr[i];
+           }
+       }
+
+       alert ("A soma dos números pares é: "+soma)
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
